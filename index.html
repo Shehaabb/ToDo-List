@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Todo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='./style.css'>
+    </head>
+<body>
+
+<div class="todo-container">
+    <div class="todo-header">
+        <input type="text" id="taskInput" placeholder="Enter new task here">
+        <button id="createTaskButton">Create</button>
+    </div>
+    
+    <div class="filter-container">
+        <a class="filter selected" data-filter="all">all</a>
+        <a class="filter" data-filter="todo">todo</a>
+        <a class="filter" data-filter="completed">completed</a>
+    </div>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script type="module" src="./script.js"></script>
+</body>
+</html>

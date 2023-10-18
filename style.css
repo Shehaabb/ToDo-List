@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #4CB7D5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.todo-container {
+    display:flex ;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.todo-header {
+    display: flex;
+    border: 2px solid #0093E9;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: left;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: none;
+    border-right: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0093E9;
+    color: #FBFBFB;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.filter-container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.filter {
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    width: 2000px;
+}
+
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(238, 238, 238,0.1);
+
+}
+.checkbox{
+    display: none;
+
+    height: 20px;
+    width: 20px;
+}
+:checked{
+    border-radius:50% ;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    font-size: 12px;
+    color: #aca8a8;
+}
+.custom-checkbox {
+    display: none;
+}
+
+.custom-label {
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    border: 2px solid #0093E9; 
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+}
+
+.custom-checkbox:checked + .custom-label {
+    background-color: #0093E9; 
+    border-radius: 50%;
+    border: none;
+    width: 25px; 
+    height: 25px;
+}
+.selected {
+    color: #0093EC;           
+    border-bottom: 2px solid #0093EC;
+}
+@media screen and (max-width:426px) {
+    .todo-container {
+        width: 320px;
+    }
+}
